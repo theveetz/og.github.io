@@ -1,0 +1,15 @@
+<?php
+// register.php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Example: Simulate database connection and insert user data
+    echo "Registration successful!<br>";
+    echo "Username: " . $username . "<br>";
+    echo "Password: " . $password . "<br>";
+} else {
+    echo "Invalid request!";
+}
+?>

@@ -1,0 +1,18 @@
+<?php
+// login.php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Example: Simulate checking credentials against a database
+    if ($username === "test" && $password === "test") {
+        echo "Login successful!<br>";
+        echo "Welcome, " . $username . "<br>";
+    } else {
+        echo "Invalid username or password!";
+    }
+} else {
+    echo "Invalid request!";
+}
+?>

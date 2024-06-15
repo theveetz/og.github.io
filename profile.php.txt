@@ -1,0 +1,5 @@
+<?php
+// profile.php
+
+echo "This is the user profile page.";
+?>
